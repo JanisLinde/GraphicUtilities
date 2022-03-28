@@ -354,7 +354,7 @@ namespace GU
 	{
 		public:
 			Matrix2x2() : _m11(1), _m12(0), _m21(0), _m22(1) { }
-			Matrix2x2(Matrix2x2 &m)
+			Matrix2x2(const Matrix2x2 &m)
 				: _m11(m._m11), _m12(m._m12), 
 				_m21(m._m21), _m22(m._m22) { }
 			Matrix2x2(float m11, float m12, float m21, float m22)
@@ -457,7 +457,7 @@ namespace GU
 				: _m11(1), _m12(0), _m13(0),
 				_m21(0), _m22(1), _m23(0),
 				_m31(0), _m32(0), _m33(1) { }
-			Matrix3x3(Matrix3x3 &m)
+			Matrix3x3(const Matrix3x3 &m)
 				: _m11(m._m11), _m12(m._m12), _m13(m._m13),
 				_m21(m._m21), _m22(m._m22), _m23(m._m23),
 				_m31(m._m31), _m32(m._m32), _m33(m._m33) { }
@@ -587,7 +587,7 @@ namespace GU
 				_m21(0), _m22(1), _m23(0), _m24(0),
 				_m31(0), _m32(0), _m33(1), _m34(0),
 				_m41(0), _m42(0), _m43(0), _m44(1) { }
-			Matrix4x4(Matrix4x4 &m)
+			Matrix4x4(const Matrix4x4 &m)
 				: _m11(m._m11), _m12(m._m12), _m13(m._m13), _m14(m._m14), 
 				_m21(m._m21), _m22(m._m22), _m23(m._m23), _m24(m._m24),
 				_m31(m._m31), _m32(m._m32), _m33(m._m33), _m34(m._m34),
