@@ -24,7 +24,7 @@ namespace GU
         dest.push_back(tmp[1]);
     }
 
-    inline bool LoadBMP(const char* filename, std::vector<uint8_t> &rgb, int &width, int &height)
+    inline bool LoadBmp(const char* filename, std::vector<uint8_t> &rgb, int &width, int &height)
     {
         std::ifstream file;
         file.open(filename);
@@ -80,7 +80,7 @@ namespace GU
         return true;
     }
 
-	inline int SaveBMP(const char* filename, std::vector<uint8_t> &rgb, int width, int height)
+	inline int SaveBmp(const char* filename, std::vector<uint8_t> &rgb, int width, int height)
 	{
 		std::vector<uint8_t> data;
 		// magic number BM

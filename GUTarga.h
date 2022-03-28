@@ -15,7 +15,7 @@ namespace GU
         unsigned char data2;
     };
 
-    inline bool LoadTGA(const char* filename, std::vector<uint8_t> &rgb, int &width, int &height, int& bpp)
+    inline bool LoadTga(const char* filename, std::vector<uint8_t> &rgb, int &width, int &height, int& bpp)
     {
         TGAHeader tgaHeader;
         unsigned char* targaData = nullptr;
