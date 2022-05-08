@@ -1,3 +1,3 @@
 ﻿# GraphicUtilities
  
-Some simple graphic funcions in single headers
+Some simple function used for games in single headers.
